@@ -111,19 +111,30 @@ body{background:linear-gradient(#bfe8ff,#eefbff);font-family:Arial,sans-serif;ov
 Love,
 Your Name</div></div></div>
 <script>
-function begin(){
- document.getElementById('flap').style.transform='rotateX(180deg)';
- setTimeout(()=>{
-   intro.style.display='none';
-   loading.style.display='flex';
-   setTimeout(()=>{
-      loading.style.display='none';
-      content.style.display='block';
-      music.play().catch(()=>{});
-   },2000);
- },800);
+const music = document.getElementById("music");
+
+function begin() {
+
+    // Start the music as soon as the envelope is tapped
+    music.play().catch(err => {
+        console.log("Autoplay blocked:", err);
+    });
+
+    // Open the envelope
+    document.getElementById("flap").style.transform = "rotateX(180deg)";
+
+    // Show loading screen
+    setTimeout(() => {
+        document.getElementById("intro").style.display = "none";
+        document.getElementById("loading").style.display = "flex";
+
+        // Show the letter
+        setTimeout(() => {
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        }, 2000);
+
+    }, 800);
 }
 </script>
 </body></html>
-
-Can you make the formate of the paper landscape when opened in mobile?
