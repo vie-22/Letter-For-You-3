@@ -47,70 +47,42 @@ body{background:linear-gradient(#bfe8ff,#eefbff);font-family:Arial,sans-serif;ov
   height:35px;
 }
 .paper{
-    width:min(900px,90vw);
-    margin:0 auto;
-    background:#fffef8;
-    border-radius:14px;
-    padding:55px;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
+  width:min(90vw,820px);
+  aspect-ratio:auto;
+  margin:0 auto;
+  background:#fffef8;
+  border-radius:12px;
+  padding:55px;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
 
-    background-image:
-    repeating-linear-gradient(
-        #fffef8 0,
-        #fffef8 31px,
-        #d8ecff 31px,
-        #d8ecff 32px
-    );
+  background-image:
+  repeating-linear-gradient(
+    #fffef8 0,
+    #fffef8 31px,
+    #d8ecff 31px,
+    #d8ecff 32px
+  );
 }
-@media (max-width:600px){
+@media(max-width:600px){
 
-    body{
-        overflow-x:hidden;
-    }
+  .paper{
+    width:92vw;
+    aspect-ratio:4 / 3;
+    padding:25px;
+  }
 
-    #content{
-        padding:20px 10px;
-    }
-
-    .music{
-        width:90%;
-        max-width:300px;
-        margin-bottom:18px;
-    }
-
-    .music h2{
-        font-size:16px;
-    }
-
-    .music p{
-        font-size:12px;
-    }
-
-    .music audio{
-        height:32px;
-    }
-
-    .paper{
-
-        width:96vw;
-
-        max-width:none;
-
-        padding:25px 22px;
-
-        border-radius:10px;
-
-        min-height:55vw;
-
-    }
-
-   #letter{
-    font-family:'Shadows Into Light', cursive;
-    font-size:clamp(22px,3vw,32px);
+  #letter{
+    font-size:13px;
     line-height:1.2;
-    text-align:justify;
-    text-justify:inter-word;
-    white-space:normal;
+  }
+
+}
+#letter{
+  font-family:'Shadows Into Light',cursive;
+  font-size:clamp(22px,3.2vw,32px);
+  line-height:1.15;
+  white-space:pre-line;
+  text-align:justify;
 }
 
 </style></head><body>
@@ -128,20 +100,11 @@ body{background:linear-gradient(#bfe8ff,#eefbff);font-family:Arial,sans-serif;ov
   <source src="nowherefast.mp3" type="audio/mpeg">
 </audio>
 </div>
-<div class="paper"><div id="letter"> <p><strong>To: Mi Febylat</strong></p>
+<div class="paper"><div id="letter"> To: Mi Febylat
 
-<p>I've never done this before, so if this comes off as cheesy or unlike me, it probably is HAHAHAHAHA. </p>
-<p>Nonetheless, I'm setting aside my discomfort in displaying vulnerability once again because you always somehow make it easier for me. </p>
-<p>Let me start this by mentioning that I've NEVER been in a relationship before. I've never had a girlfriend, and I've yet to become one.</p>
-<p> I don't joke around when it comes to love because it's something I've always had trouble figuring out, and there was a time when I didn't want anything to do with it at all.</p>
-<p>I guess it stemmed from my past experience of being rushed into a relationship when I clearly wasn't ready.</p>
-<br>
-<p>That being said, I can assure you that what we have going on for us right now is real and something I'm willing to fight for. In just two months, you made me feel loved in a way no other girl in the vicinity ever could.</p>
-<p>You've brought out parts of me that even I wasn't aware existed, and what drew me closer is that I never had to pretend to be someone I'm not around you. You have no idea how happy I am knowing you feel the same :)) </p>
-<br>
-<p>Since the night you decided to slide into my life (DMs) again, all I could think was, "Why so sudden?" I didn't even know I had included you on my close friends list unknowingly, but I'm glad I happened to do so anyway.</p>
-<p>Honestly, I started this year with one disappointment after the other. And because of that, I found myself leaning into habits I knew could potentially ruin me and my relationship with others,</p>
-<p>but it was how I coped. </p>
+I've never done this before, so if this comes off as cheesy or unlike me, it probably is HAHAHAHAHA. 
+  Nonetheless, I'm setting aside my discomfort in displaying vulnerability once again because you somehow make it easier for me. Honestly, I started this year with one disappointment after the other. And because of that, I found myself leaning into habits I knew could potentially ruin me and my relationship with others, but it was how I coped. Eventually, I was chasing highs
+
 Love,
 Your Name</div></div></div>
 <script>
@@ -159,3 +122,5 @@ function begin(){
 }
 </script>
 </body></html>
+
+Can you make the formate of the paper landscape when opened in mobile?
